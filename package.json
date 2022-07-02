@@ -1,0 +1,65 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "NODE_ENV=dev node source/main.js",
+    "stage": "NODE_ENV=stage node source/main.js",
+    "prod": "NODE_ENV=prod node source/main.js",
+    "start": "NODE_PATH=. nodemon index.js",
+    "local": "NODE_PATH=. nodemon index.js",
+    "test": "nyc --reporter=html mocha test/* --exit",
+    "prettier": "prettier --print-width 100 --single-quote --trailing-comma none --write .",
+    "upgrade": "npm-check --update"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Jesus Verma",
+    "email": "jesus.verma@gmail.com"
+  },
+  "engines": {
+    "node": ">=12.16.0"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 100
+  },
+  "dependencies": {
+    "@sentry/node": "^5.15.5",
+    "awilix": "^4.2.6",
+    "awilix-express": "^3.0.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-prom-bundle": "^6.0.0",
+    "express-status-monitor": "^1.3.3",
+    "http-status": "1.4.2",
+    "morgan": "1.10.0",
+    "mysql2": "^2.3.3",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "prom-client": "^14.0.1",
+    "ramda": "0.27.0",
+    "sequelize": "^6.3.1",
+    "sequelize-auto": "0.4.29",
+    "structure": "^2.0.1",
+    "uuid": "^8.1.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cls-hooked": "^4.2.2",
+    "mocha": "^8.0.1",
+    "nock": "^13.0.2",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.0.1",
+    "prettier": "^2.0.5",
+    "sinon": "^9.0.2"
+  }
+}

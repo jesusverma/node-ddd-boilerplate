@@ -8,9 +8,9 @@
         "level": "debug"
     },
     "mysqlConfig": {
-        "database": "elVc3HEZ9F",
-        "username": "elVc3HEZ9F",
-        "password": "MBpI6gV5fp",
+        "database": "ZYl415yen7",
+        "username": "ZYl415yen7",
+        "password": "g860ebwvcI",
         "options": {
             "host": "remotemysql.com",
             "port": 3306,

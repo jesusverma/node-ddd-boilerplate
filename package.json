@@ -5,7 +5,7 @@
     "dev": "NODE_ENV=dev node source/main.js",
     "stage": "NODE_ENV=stage node source/main.js",
     "prod": "NODE_ENV=prod node source/main.js",
-    "start": "NODE_PATH=. nodemon index.js",
+    "start": "NODE_PATH=. node index.js",
     "local": "NODE_PATH=. nodemon index.js",
     "test": "nyc --reporter=html mocha test/* --exit",
     "prettier": "prettier --print-width 100 --single-quote --trailing-comma none --write .",

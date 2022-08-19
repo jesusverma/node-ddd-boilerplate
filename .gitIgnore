@@ -8,4 +8,4 @@
 
 *.log
 
-config.json
+# config.json
